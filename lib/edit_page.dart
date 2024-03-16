@@ -148,7 +148,7 @@ class _EditPageState extends State<EditPage> {
               child: const Padding(
                 padding: EdgeInsets.all(8.0),
                 child: Icon(
-                  Icons.summarize,
+                  Icons.chat_rounded,
                   color: Colors.white,
                 ),
               ),
@@ -277,6 +277,13 @@ class _EditPageState extends State<EditPage> {
           ),
         ],
       ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: (){
+          _saveNote();
+          Navigator.of(context).pop();
+        },
+        child: const Icon(Icons.check),
+      )
     );
   }
 }

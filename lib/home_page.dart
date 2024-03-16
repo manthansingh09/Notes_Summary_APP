@@ -54,7 +54,7 @@ class _HomePageState extends State<HomePage> {
   void _newNote() async {
     final newNote = Note(
       id: DateTime.now().toString(),
-      title: 'New Note',
+      title: '',
       content: '',
       summary: '',
       lastEdited: DateTime.now(),
